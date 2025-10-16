@@ -9,11 +9,11 @@ echo "Starting database initialization..."
 
 # cleaning our dataset
 echo "Running data cleaning..."
-python backend/data/cleaning.py
+python data/cleaning.py
 
 # database setup script
 echo "Setting up database..."
-python backend/db/db_setup.py
+python db/db_setup.py
 
 echo "Database initialization completed successfully!"
 

@@ -47,14 +47,14 @@ class TaxiDataCleaner:
     """
     
     def __init__(self):
-        self.raw_data_path = "./raw/train.csv"
-        self.cleaned_data_path = "./clean/clean.csv"
-        self.log_path = "./clean/clean_log.txt"
+        self.raw_data_path = "data/raw/train.csv"
+        self.cleaned_data_path = "data/clean/clean.csv"
+        self.log_path = "data/clean/clean_log.txt"
         self.cleaning_stats = {}
         
     def load_raw_data(self):
         """Load the raw CSV data"""
-        print("📥 Loading raw data...")
+        print("Loading raw data...")
         
         try:
             # read the CSV file

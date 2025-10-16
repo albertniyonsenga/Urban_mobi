@@ -12,9 +12,9 @@ class DatabaseSetup:
     """
     
     def __init__(self):
-        self.db_path = "mobility.db"  # SQLite database file
-        self.schema_path = "schema.sql"
-        self.cleaned_data_path = "../data/clean/clean.csv"
+        self.db_path = "db/mobility.db"  # SQLite database file
+        self.schema_path = "db/schema.sql"
+        self.cleaned_data_path = "data/clean/clean.csv"
         
     def create_database(self):
         """Create the database with schema"""
