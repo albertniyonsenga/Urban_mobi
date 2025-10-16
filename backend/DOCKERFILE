@@ -10,6 +10,8 @@ RUN pip install --no-cache-dir --upgrade pip && \
 #copy our backend directory
 COPY ./backend/ .
 
+RUN chmod +x setup.sh
+
 EXPOSE 8000
 
 CMD ["./setup.sh"]

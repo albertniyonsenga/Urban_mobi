@@ -36,7 +36,7 @@ async def root():
 
 @app.get("/health")
 async def health_check():
-    return {"status": "healthy", "timestamp": datetime.now().isoformat()}
+    return {"status": "healthy", "timestamp": datetime.datetime.now().isoformat()}
 
 if __name__ == "__main__":
     import uvicorn
