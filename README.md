@@ -6,8 +6,6 @@ Urban Mobility Data Explorer is a full-stack web application that processes, ana
 
 **Live Demo**: [https://urbanmobi.onrender.com](https://urbanmobi.onrender.com)
 
-![System Architecture](https://via.placeholder.com/800x400/2c3e50/ffffff?text=Urban+Mobility+Architecture)
-
 ## Key Features
 
 ### Data Analytics
@@ -34,11 +32,11 @@ Urban Mobility Data Explorer is a full-stack web application that processes, ana
 - **Framework**: FastAPI (Python)
 - **Database**: SQLite with SQLAlchemy ORM
 - **Data Processing**: Pandas, NumPy
-- **Clustering**: Scikit-learn (K-Means, DBSCAN)
+- **Clustering**: custom K-Means
 
 ### Frontend
-- **Core**: HTML5, CSS3, JavaScript (ES6+)
-- **Visualization**: Chart.js, Leaflet.js
+- **Core**: HTML5, CSS3, JavaScrip
+- **Visualization**: Leaflet.js
 - **Styling**: Custom CSS with CSS Grid/Flexbox
 - **Maps**: OpenStreetMap with custom heat layers
 
@@ -81,8 +79,8 @@ Urban Mobility Data Explorer is a full-stack web application that processes, ana
 
 ### Docker Deployment
 ```bash
-docker build -t urban-mobility.
-docker run -p 8000:8000 urban-mobility
+docker build -t tag_name.
+docker run -p 8000:8000 tag_name
 ```
 
 ## Project Structure
@@ -197,7 +195,9 @@ def custom_kmeans_spatial(coordinates, k=10, max_iters=100):
 
 ## Video Walkthrough
 
-[**Watch the 5-minute demo video**](https://youtube.com/your-video-link) showcasing:
+https://github.com/user-attachments/assets/dff2181e-4f9f-4d91-9a25-d71c55e3e425
+
+Showcasing:
 - System architecture and design decisions
 - Live dashboard interactions
 - Custom algorithm demonstration
