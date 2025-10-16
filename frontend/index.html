@@ -15,6 +15,7 @@
             <h1>Urban Mobility Data Explorer</h1>
             <p>Analyzing urban transportation patterns and mobility hotspots</p>
         </header>
+
         <section class="filters-section">
             <div class="filter-group">
                 <label for="day-filter">Day of Week:</label>
@@ -44,6 +45,7 @@
                 <button id="reset-filters" class="btn-secondary">Reset</button>
             </div>
         </section>
+
         <section class="summary-cards">
             <div class="card">
                 <div class="card-icon">🚕</div>
@@ -73,7 +75,47 @@
                     <p id="avg-speed" class="card-value">-- km/h</p>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-icon">👥</div>
+                <div class="card-content">
+                    <h3>Avg Passengers</h3>
+                    <p id="avg-passengers" class="card-value">--</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🕐</div>
+                <div class="card-content">
+                    <h3>Busiest Hour</h3>
+                    <p id="busiest-hour" class="card-value">--</p>
+                </div>
+            </div>
         </section>
+
+        <section class="analytics-section">
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <h3>📊 Top Clusters by Duration</h3>
+                    <div id="cluster-ranking" class="analytics-content">
+                        <div class="loading-text">Loading cluster rankings...</div>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <h3>🚖 Longest Trips</h3>
+                    <div id="trip-sorting" class="analytics-content">
+                        <div class="loading-text">Loading trip data...</div>
+                    </div>
+                </div>
+                
+                <div class="analytics-card">
+                    <h3>🕒 Hourly Pickups</h3>
+                    <div id="hourly-pickups" class="analytics-content">
+                        <div class="loading-text">Loading hourly analysis...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="charts-section">
             <div class="chart-container">
                 <h3>Hourly Trip Distribution</h3>
@@ -84,6 +126,7 @@
                 <canvas id="daily-chart"></canvas>
             </div>
         </section>
+
         <section class="map-section">
             <div class="map-header">
                 <h3>Mobility Hotspots & Flows</h3>
@@ -95,6 +138,7 @@
             </div>
             <div id="map"></div>
         </section>
+
         <div id="loading" class="loading hidden">
             <div class="spinner"></div>
             <p>Loading data...</p>
